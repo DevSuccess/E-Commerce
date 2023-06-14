@@ -45,3 +45,7 @@ class CustomerRegistration(UserCreationForm):
 
 class PasswordRestForm(PasswordChangeForm):
     pass
+
+
+class CustomerProfileForm(forms.ModelForm):
+    pass
