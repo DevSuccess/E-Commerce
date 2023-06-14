@@ -4,7 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a9b5729d-7afc-42b4-8ccb-567a018dded3" name="Changes" comment="" />
+    <list default="true" id="a9b5729d-7afc-42b4-8ccb-567a018dded3" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/Market/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/Market/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/static/app/img/neel.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/static/app/img/Neel.png" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -49,6 +52,13 @@
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\Hackathon\Market\app\static\app\img" />
+      <recent name="E:\Hackathon\Market\app\static\app\js" />
+      <recent name="E:\Hackathon\Market\app\static\app\css" />
+    </key>
+  </component>
   <component name="RunManager">
     <configuration name="Market" type="Python.DjangoServer" factoryName="Django server">
       <module name="Market" />
@@ -83,7 +93,7 @@
       <option name="presentableId" value="Default" />
       <updated>1686721371711</updated>
       <workItem from="1686721456589" duration="663000" />
-      <workItem from="1686722230582" duration="829000" />
+      <workItem from="1686722230582" duration="1259000" />
     </task>
     <servers />
   </component>
