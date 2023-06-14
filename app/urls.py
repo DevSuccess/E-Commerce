@@ -23,7 +23,15 @@ urlpatterns = [
     path('accounts/login/', auth_view.LoginView.as_view(
         template_name='app/login.html',
         authentication_form=forms.LoginForm), name='login'),
-    path('password-reset', auth_view.PasswordResetView.as_view(
+    path('password-reset/', auth_view.PasswordResetView.as_view(
         template_name='app/password_reset.html',
-        form_class = forms.PasswordRestForm), name='password-reset')
+        form_class=forms.MyPasswordResetForm), name='password-reset'),
+    path('password-change/', auth_view.PasswordChangeView.as_view(
+        template_name='app/change_password.html',
+        form_class=forms.MyPasswordChangeForm,
+        success_url='/password-change-done'
+    ), name='password-change'),
+    path('password-change-done/', auth_view.PasswordChangeDoneView.as_view(
+        template_name='app/password_change_done.html'
+    ), name='password-change-done')
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
