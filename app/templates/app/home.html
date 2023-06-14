@@ -2,6 +2,76 @@
 {% load static %}
 {% block title %}Home{% endblock %}
 
+{% block banner-slider %}
+<div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="{% static 'app/img/banner/b1.jpg' %}" class="d-block w-100" alt="banner">
+    </div>
+    <div class="carousel-item">
+      <img src="{% static 'app/img/banner/b2.jpg' %}" class="d-block w-100" alt="banner">
+    </div>
+    <div class="carousel-item">
+      <img src="{% static 'app/img/banner/b3.jpg' %}" class="d-block w-100" alt="banner">
+    </div>
+    <div class="carousel-item">
+      <img src="{% static 'app/img/banner/b4.jpg' %}" class="d-block w-100" alt="banner">
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+{% endblock %}
+
+{% block information %}
+<div class=container"">
+    <div class="row bg-success text-center p-5 text-white border-bottom shadow">
+        <h1>Products</h1>
+        <small class="fs-5">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos dolores eos et labore nostrum sequi!
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam dolorum ipsa laboriosam temporibus!
+            Distinctio, labore!
+        </small>
+    </div>
+</div>
+{% endblock %}
+
 {% block main-content %}
-Home
+<div class="container mb-5">
+    <h1 class="text-center">Dairy Product</h1>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4 col-sm-6">
+                <div class="card">
+                    <img src="{% static 'app/img/product/buffalo-ghee.png' %}" class="card-img-top custom-card-img" alt="Ghee">
+                    <div class="card-body">
+                        <h5 class="card-title">Ghee</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-6">
+                <div class="card">
+                    <img src="{% static 'app/img/product/cow-ghee.png' %}" class="card-img-top custom-card-img" alt="CURD">
+                    <div class="card-body">
+                        <h5 class="card-title">CURD</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-6">
+                <div class="card">
+                    <img src="{% static 'app/img/product/standardized-milk.png' %}" class="card-img-top custom-card-img" alt="Kulfi">
+                    <div class="card-body">
+                        <h5 class="card-title">Paneer</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
 {% endblock %}
