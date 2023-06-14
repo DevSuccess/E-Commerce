@@ -1,0 +1,44 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %}About{% endblock %}
+
+{% block banner-slider %}
+<div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="{% static 'app/img/banner/b1.jpg' %}" class="d-block w-100" alt="banner">
+    </div>
+    <div class="carousel-item">
+      <img src="{% static 'app/img/banner/b2.jpg' %}" class="d-block w-100" alt="banner">
+    </div>
+    <div class="carousel-item">
+      <img src="{% static 'app/img/banner/b3.jpg' %}" class="d-block w-100" alt="banner">
+    </div>
+    <div class="carousel-item">
+      <img src="{% static 'app/img/banner/b4.jpg' %}" class="d-block w-100" alt="banner">
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+{% endblock %}
+
+{% block main-content %}
+<div class="container mt-3 mb-5 ">
+    <h2 class="text-center">About User</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla convallis aliquam ante, vitae facilisis lectus luctus in. Vivamus lobortis sapien ac nisl aliquam ullamcorper. Integer at ipsum vel tellus eleifend rhoncus. Sed eu libero vel orci consequat volutpat. Duis quis dui sed lorem fermentum convallis nec ac purus. Fusce tristique elit ac convallis varius. Vestibulum in convallis nunc. Ut vitae maximus mi, id venenatis velit. Suspendisse ac bibendum odio. Morbi nec facilisis quam, eget finibus ligula. Quisque nec cursus quam. Praesent aliquet libero non nisl luctus, id lacinia lacus venenatis.</p>
+    <p>Nulla facilisi. Integer varius, elit id sollicitudin vestibulum, elit nisi placerat enim, vel malesuada elit dui ac tellus. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Vestibulum eget erat at odio ullamcorper elementum vel ac ligula. Nunc eu nunc justo. Sed et augue tincidunt, ultrices risus vitae, tincidunt ex. Nam ut turpis at libero vestibulum ultrices. Etiam ut justo varius, vestibulum felis eu, vestibulum sapien. Aliquam posuere turpis sit amet tempor mollis. Fusce semper, arcu non </p>
+</div>
+
+<div class="container mt-3  mb-5">
+    <h2 class="text-center">Mission</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla convallis aliquam ante, vitae facilisis lectus luctus in. Vivamus lobortis sapien ac nisl aliquam ullamcorper. Integer at ipsum vel tellus eleifend rhoncus. Sed eu libero vel orci consequat volutpat. Duis quis dui sed lorem fermentum convallis nec ac purus. Fusce tristique elit ac convallis varius. Vestibulum in convallis nunc. Ut vitae maximus mi, id venenatis velit. Suspendisse ac bibendum odio. Morbi nec facilisis quam, eget finibus ligula. Quisque nec cursus quam. Praesent aliquet libero non nisl luctus, id lacinia lacus venenatis.</p>
+    <p>Nulla facilisi. Integer varius, elit id sollicitudin vestibulum, elit nisi placerat enim, vel malesuada elit dui ac tellus. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Vestibulum eget erat at odio ullamcorper elementum vel ac ligula. Nunc eu nunc justo. Sed et augue tincidunt, ultrices risus vitae, tincidunt ex. Nam ut turpis at libero vestibulum ultrices. Etiam ut justo varius, vestibulum felis eu, vestibulum sapien. Aliquam posuere turpis sit amet tempor mollis. Fusce semper, arcu non </p>
+</div>
+{% endblock %}

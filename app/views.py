@@ -9,6 +9,14 @@ def home(request):
     return render(request, 'app/home.html')
 
 
+def about(request):
+    return render(request, 'app/about.html')
+
+
+def contact(request):
+    return render(request, 'app/contact.html')
+
+
 class CategoryView(View):
     def get(self, request, val):
         products = models.Product.objects.filter(category=val)
