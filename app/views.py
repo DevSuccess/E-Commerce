@@ -1,7 +1,9 @@
 from django.db.models import Count
 from django.shortcuts import render
 from django.views import View
+from django.contrib import messages
 from . import models
+from . import forms
 
 
 # Create your views here.
@@ -38,3 +40,19 @@ class ProductDetail(View):
     def get(self, request, id):
         product = models.Product.objects.get(pk=id)
         return render(request, 'app/product_detail.html', locals())
+
+
+class CustomerRegistrationView(View):
+    def get(self, request):
+        form = forms.CustomerRegistration()
+        return render(request, 'app/customer_registration.html', locals())
+
+    def post(self, request):
+        form = forms.CustomerRegistration(request.POST)
+        if form.is_valid():
+            form.save()
+            messages.success(request, "Congratulations ! User Register Successfully")
+        else:
+            messages.warning(request, "Invalid Input Data")
+
+        return render(request, 'app/customer_registration.html', locals())
