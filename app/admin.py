@@ -12,4 +12,4 @@ class ProductModelAdmin(admin.ModelAdmin):
 
 @admin.register(models.Customer)
 class CustomerModelAdmin(admin.ModelAdmin):
-    list_display = ['id', 'user', 'locality', 'city', 'state', 'zipcode']
+    list_display = ['id', 'user', 'mobile', 'locality', 'city', 'state', 'zipcode']
