@@ -48,28 +48,34 @@
     <div class="container">
         <div class="row">
             <div class="col-md-4 col-sm-6">
-                <div class="card">
-                    <img src="{% static 'app/img/product/buffalo-ghee.png' %}" class="card-img-top custom-card-img" alt="Ghee">
-                    <div class="card-body">
-                        <h5 class="card-title">Ghee</h5>
+                <a href="{% url 'product:category' 'GH' %}">
+                    <div class="card">
+                        <img src="{% static 'app/img/product/buffalo-ghee.png' %}" class="card-img-top custom-card-img" alt="Ghee">
+                        <div class="card-body">
+                            <h5 class="card-title">Ghee</h5>
+                        </div>
                     </div>
-                </div>
+                </a>
             </div>
             <div class="col-md-4 col-sm-6">
-                <div class="card">
-                    <img src="{% static 'app/img/product/cow-ghee.png' %}" class="card-img-top custom-card-img" alt="CURD">
-                    <div class="card-body">
-                        <h5 class="card-title">CURD</h5>
+                <a href="{% url 'product:category' 'GR' %}">
+                    <div class="card">
+                        <img src="{% static 'app/img/product/cow-ghee.png' %}" class="card-img-top custom-card-img" alt="CURD">
+                        <div class="card-body">
+                            <h5 class="card-title">CURD</h5>
+                        </div>
                     </div>
-                </div>
+                </a>
             </div>
             <div class="col-md-4 col-sm-6">
-                <div class="card">
-                    <img src="{% static 'app/img/product/standardized-milk.png' %}" class="card-img-top custom-card-img" alt="Kulfi">
-                    <div class="card-body">
-                        <h5 class="card-title">Paneer</h5>
+                <a href="{% url 'product:category' 'PN' %}">
+                    <div class="card">
+                        <img src="{% static 'app/img/product/standardized-milk.png' %}" class="card-img-top custom-card-img" alt="Kulfi">
+                        <div class="card-body">
+                            <h5 class="card-title">Paneer</h5>
+                        </div>
                     </div>
-                </div>
+                </a>
             </div>
         </div>
     </div>

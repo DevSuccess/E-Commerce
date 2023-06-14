@@ -17,6 +17,15 @@ class CategoryView(View):
         return render(request, 'app/category.html', locals())
 
 
+class CategoryTitle(View):
+    def get(self, request, val):
+        products = models.Product.objects.filter(title=val)
+        titles = models.Product.objects \
+            .filter(category=products[0].category) \
+            .values('title')
+        return render(request, 'app/category.html', locals())
+
+
 class ProductDetail(View):
     def get(self, request, id):
         product = models.Product.objects.get(pk=id)
