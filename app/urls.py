@@ -15,7 +15,9 @@ urlpatterns = [
     path('category-title/<val>/', views.CategoryTitle.as_view(), name='category-title'),
     path('product-detail/<int:id>/', views.ProductDetail.as_view(), name='product-detail'),
     path('profile/', views.ProfileView.as_view(), name='profile'),
-    path('address/', views.ProfileView.as_view(), name='address'),
+    path('address/', views.address, name='address'),
+    path('update-address/<int:id>/', views.UpdateAddress.as_view(), name='update-address'),
+
     # login authentication
     path('registration/', views.CustomerRegistrationView.as_view(), name='customer-registration'),
     path('accounts/login/', auth_view.LoginView.as_view(

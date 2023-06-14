@@ -1,5 +1,5 @@
 from django.db.models import Count
-from django.shortcuts import render
+from django.shortcuts import render, redirect
 from django.views import View
 from django.contrib import messages
 from . import models
@@ -86,3 +86,34 @@ class ProfileView(View):
         else:
             messages.warning(request, "Invalid Input form")
         return render(request, 'app/profile.html', locals())
+
+
+def address(request):
+    added = models.Customer.objects.filter(user=request.user)
+
+    return render(request, 'app/address.html', locals())
+
+
+class UpdateAddress(View):
+    def get(self, request, id):
+        added = models.Customer.objects.get(pk=id)
+        form = forms.CustomerProfileForm(instance=added)
+        return render(request, 'app/update_address.html', locals())
+
+    def post(self, request, id):
+        form = forms.CustomerProfileForm(request.POST)
+        if form.is_valid():
+            add = models.Customer.objects.get(pk=id)
+            add.name = form.cleaned_data['name']
+            add.locality = form.cleaned_data['locality']
+            add.city = form.cleaned_data['city']
+            add.mobile = form.cleaned_data['mobile']
+            add.state = form.cleaned_data['state']
+            add.state = form.cleaned_data['state']
+            add.zipcode = form.cleaned_data['zipcode']
+
+            add.save()
+            messages.success(request, "Congratulations ! Profile Update Successfully")
+        else:
+            messages.warning(request, "Invalid Input Data")
+        return redirect('product:address')
