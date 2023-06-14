@@ -6,9 +6,12 @@
   <component name="ChangeListManager">
     <list default="true" id="a9b5729d-7afc-42b4-8ccb-567a018dded3" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Market/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/Market/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/forms.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/forms.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/templates/app/password_change_done.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/templates/app/password_change_done.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/templates/app/password_reset.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/templates/app/password_reset.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/base.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -98,7 +101,7 @@
       <updated>1686721371711</updated>
       <workItem from="1686721456589" duration="663000" />
       <workItem from="1686722230582" duration="25623000" />
-      <workItem from="1686759054923" duration="5756000" />
+      <workItem from="1686759054923" duration="16395000" />
     </task>
     <servers />
   </component>
