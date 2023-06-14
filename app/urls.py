@@ -8,5 +8,6 @@ from . import views
 app_name = 'product'
 urlpatterns = [
     path('', views.home, name='home'),
-    path('category/<slug:val>/', views.CategoryView.as_view(), name='category')
+    path('category/<slug:val>/', views.CategoryView.as_view(), name='category'),
+    path('product-detail/<int:id>/', views.ProductDetail.as_view(), name='product-detail'),
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

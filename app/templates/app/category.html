@@ -18,14 +18,14 @@
                 <div class="row">
                     {% for product in products %}
                         <div class="col text-center mb-4">
-                            <a href="" class="btn">
+                            <a href="{% url 'product:product-detail' product.id %}" class="btn">
                                 <div class="">
                                     <img src="{{ product.product_image.url }}" alt="{{ product.title }}" width="300px" height="200px">
-                                    <span class="fw-bold">{{ product.title }}</span>
-                                    <span class="fw-bold text-danger">
+                                    <div class="fw-bold">{{ product.title }}</div>
+                                    <div class="fw-bold text-danger">
                                         Rs. {{ product.discounted_price }}
                                         <small class="fw-light text-decoration-line-through">{{ product.selling_price }}</small>
-                                    </span>
+                                    </div>
                                 </div>
                             </a>
                         </div>
