@@ -2,6 +2,7 @@ from django.contrib.auth.forms import UserCreationForm, AuthenticationForm, User
 from django import forms
 from django.contrib.auth.models import User
 
+from . import models
 
 class LoginForm(AuthenticationForm):
     username = UsernameField(widget=forms.TextInput(
@@ -48,4 +49,14 @@ class PasswordRestForm(PasswordChangeForm):
 
 
 class CustomerProfileForm(forms.ModelForm):
-    pass
+    class Meta:
+        model = models.Customer
+        fields = ['name', 'locality', 'city', 'mobile', 'state', 'zipcode']
+        widgets = {
+            'name': forms.TextInput(attrs={'class': 'form-control'}),
+            'locality': forms.TextInput(attrs={'class': 'form-control'}),
+            'city': forms.TextInput(attrs={'class': 'form-control'}),
+            'mobile': forms.NumberInput(attrs={'class': 'form-control'}),
+            'state': forms.Select(attrs={'class': 'form-control'}),
+            'zipcode': forms.NumberInput(attrs={'class': 'form-control'}),
+        }

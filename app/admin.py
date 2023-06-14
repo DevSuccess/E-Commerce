@@ -8,3 +8,8 @@ class ProductModelAdmin(admin.ModelAdmin):
     list_display = ['id', 'title', 'discounted_price', 'selling_price', 'category', 'product_image']
     filter = ['title']
     list_editable = ['discounted_price', 'selling_price']
+
+
+@admin.register(models.Customer)
+class CustomerModelAdmin(admin.ModelAdmin):
+    list_display = ['id', 'user', 'locality', 'city', 'state', 'zipcode']
