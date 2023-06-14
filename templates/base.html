@@ -21,21 +21,21 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="{% url 'home' %}">Home</a>
+                        <a class="nav-link active" aria-current="page" href="{% url 'product:home' %}">Home</a>
                     </li>
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                         Products
                         </a>
                         <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <li><a class="dropdown-item" href="#">Milk</a></li>
-                            <li><a class="dropdown-item" href="#">Curd</a></li>
-                            <li><a class="dropdown-item" href="#">Milkshake</a></li>
-                            <li><a class="dropdown-item" href="#">Lassi</a></li>
-                            <li><a class="dropdown-item" href="#">Ghee</a></li>
-                            <li><a class="dropdown-item" href="#">Panner</a></li>
-                            <li><a class="dropdown-item" href="#">Cheese</a></li>
-                            <li><a class="dropdown-item" href="#">Ice-creams</a></li>
+                            <li><a class="dropdown-item" href="{% url 'product:category' 'ML' %}">Milk</a></li>
+                            <li><a class="dropdown-item" href="{% url 'product:category' 'CR' %}">Curd</a></li>
+                            <li><a class="dropdown-item" href="{% url 'product:category' 'MS' %}">Milkshake</a></li>
+                            <li><a class="dropdown-item" href="{% url 'product:category' 'LS' %}">Lassi</a></li>
+                            <li><a class="dropdown-item" href="{% url 'product:category' 'CH' %}">Ghee</a></li>
+                            <li><a class="dropdown-item" href="{% url 'product:category' 'PN' %}">Panner</a></li>
+                            <li><a class="dropdown-item" href="{% url 'product:category' 'CZ' %}">Cheese</a></li>
+                            <li><a class="dropdown-item" href="{% url 'product:category' 'IC' %}">Ice-creams</a></li>
                         </ul>
                     </li>
                     <li class="nav-item">
